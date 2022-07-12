@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { ReadingList } from './ReadingList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">    
+      <div>
+        <h1>Мой список книг для чтения</h1> 
+        <ReadingList />
+      </div>
+      <div className="by">
+        <p className='icon'>icons by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></p>
+        <p ><a className="natalia" rel="noreferrer" href="https://natalia-bb.glitch.me" target="_blank">by Belova Natalia</a></p> 
+      </div>      
     </div>
   );
 }
